@@ -1,0 +1,36 @@
+<nav class="navbar navbar-dark bg-primary">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg"
+        alt=""
+      />
+    </a>
+  </nav>
+</nav>
+
+<div class="row">
+  <div *ngFor="let prod of prodArr" class="col-md-4 mb-3">
+    <div class="card h-100">
+      <img class="card-img-top prodImg" [src]="prod.images[0]" alt="" />
+
+      <div class="card-body">
+        <h5>{{ prod.title }}</h5>
+        <p>⭐ {{ prod.rating }} | <span class="text-success">In stock</span></p>
+        <h4>$ {{ prod.price }}</h4>
+        <p>
+          {{ prod.description }}
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-sm m-2" mat-stroked-button color="primary">
+          Buy Now
+        </button>
+        <button class="btn btn-sm m-2" mat-stroked-button color="primary">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

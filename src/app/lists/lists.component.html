@@ -1,0 +1,204 @@
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let l of langs" class="list-group-item">
+        i want master {{ l }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let i of items" class="list-group-item">
+        {{ i }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let h of hobbies; let i = index" class="list-group-item">
+        {{ i + 1 }} . {{ h }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let l of languages" class="list-group-item">
+        <strong> {{ l }}</strong>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let f of fruits" class="list-group-item">
+       i eat {{ f }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let f of frameworks" class="list-group-item">
+       i will study {{ f.name }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let f of tasks" class="list-group-item">
+       i will  {{ f }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let m of movies" class="list-group-item">
+        "{{ m.title }}" rating - {{ m.rating }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let e of employees" class="list-group-item">
+        {{e.name}} ({{e.role}})
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let c of colors" class="list-group-item bg-{{c}}">
+        {{c}} 
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let e of employees2" class="list-group-item">
+        {{e.name}} 
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let e of employees2" class="list-group-item">
+        {{e.name}} 
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let p of products" class="list-group-item">
+        product :  {{p.title}}  |  price : {{p.price}} 
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li *ngFor="let b of books" class="list-group-item">
+         book: {{b.title}} |  author : {{b.author}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li 
+      *ngFor="let e of earnings; let i = index" class="list-group-item">
+        SR no : {{i+1}} month : {{e.month}}  amount : {{e.amount}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li 
+      *ngFor="let e of tasks2; let i = index" class="list-group-item">
+        {{e.title}} | {{e.status}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li 
+      *ngFor="let c of courses; let i = index" class="list-group-item">
+        SR No :{{i+1}} CourseName :{{c.name}}  duration : {{c.duration}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li 
+      *ngFor="let c of contacts; let i = index" class="list-group-item">
+         name : {{c.name}}  |  phone : {{c.phone}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li 
+      *ngFor="let m of marks; let i = index" class="list-group-item">
+        {{m.name}}  |   {{m.marks}}
+      </li>
+    </ul>
+  </div>
+</div>
+

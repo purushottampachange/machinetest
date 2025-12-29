@@ -1,0 +1,1456 @@
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>planetName</th>
+          <th>distanceFromSunKm</th>
+          <th>diameterKm</th>
+          <th>hasRings</th>
+          <th>numberOfMoons</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of planets; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ p.planetName }}</td>
+          <td>{{ p.distanceFromSunKm }}</td>
+          <td>{{ p.diameterKm }}</td>
+          <td>{{ p.hasRings }}</td>
+          <td>{{ p.numberOfMoons }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>mountainName</th>
+          <th>heightMeters</th>
+          <th>locationContinent</th>
+          <th>firstAscentYear</th>
+          <th>isVolcano</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of mountains; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.mountainName }}</td>
+          <td>{{ m.heightMeters }}</td>
+          <td>{{ m.locationContinent }}</td>
+          <td>{{ m.firstAscentYear }}</td>
+          <td>{{ m.isVolcano }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>uniName</th>
+          <th>foundedYear</th>
+          <th>countryLocated</th>
+          <th>studentCount</th>
+          <th>worldRanking</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of universities; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.uniName }}</td>
+          <td>{{ m.foundedYear }}</td>
+          <td>{{ m.countryLocated }}</td>
+          <td>{{ m.studentCount }}</td>
+          <td>{{ m.worldRanking }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>species</th>
+          <th>averageWeightKg</th>
+          <th>habitatType</th>
+          <th>lifespanYears</th>
+          <th>endangeredStatus</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of animals; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.species }}</td>
+          <td>{{ m.averageWeightKg }}</td>
+          <td>{{ m.habitatType }}</td>
+          <td>{{ m.lifespanYears }}</td>
+          <td>{{ m.endangeredStatus }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>appName</th>
+          <th>categoryType</th>
+          <th>downloadsMillion</th>
+          <th>developerCompany</th>
+          <th>subscriptionRequired</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of apps; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.appName }}</td>
+          <td>{{ m.categoryType }}</td>
+          <td>{{ m.downloadsMillion }}</td>
+          <td>{{ m.developerCompany }}</td>
+          <td>{{ m.subscriptionRequired }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>continentLabel</th>
+          <th>surfaceAreaMillionSqKm</th>
+          <th>countriesCount</th>
+          <th>populationBillion</th>
+          <th>largestCountry</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of continents; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.continentLabel }}</td>
+          <td>{{ m.surfaceAreaMillionSqKm }}</td>
+          <td>{{ m.countriesCount }}</td>
+          <td>{{ m.populationBillion }}</td>
+          <td>{{ m.largestCountry }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>dessertName</th>
+          <th>sugarContentGrams</th>
+          <th>servingTemp</th>
+          <th>mainIngredient</th>
+          <th>calorieCount</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of desserts; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.dessertName }}</td>
+          <td>{{ m.sugarContentGrams }}</td>
+          <td>{{ m.servingTemp }}</td>
+          <td>{{ m.mainIngredient }}</td>
+          <td>{{ m.calorieCount }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>oceanTitle</th>
+          <th>avgDepthMeters</th>
+          <th>surfaceAreaMillionSqKm</th>
+          <th>borderingContinents</th>
+          <th>salinityPpt</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of oceans; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.oceanTitle }}</td>
+          <td>{{ m.avgDepthMeters }}</td>
+          <td>{{ m.surfaceAreaMillionSqKm }}</td>
+          <td>{{ m.borderingContinents }}</td>
+          <td>{{ m.salinityPpt }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>gadgetLabel</th>
+          <th>featuresCount</th>
+          <th>batteryLifeHours</th>
+          <th>connectivityType</th>
+          <th>weightGrams</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of gadgets; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.gadgetLabel }}</td>
+          <td>{{ m.featuresCount }}</td>
+          <td>{{ m.batteryLifeHours }}</td>
+          <td>{{ m.connectivityType }}</td>
+          <td>{{ m.weightGrams }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>landmarkLabel</th>
+          <th>heightMeters</th>
+          <th>visitorCountYearMillion</th>
+          <th>countryLocation</th>
+          <th>constructionYear</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of landmarks; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.landmarkLabel }}</td>
+          <td>{{ m.heightMeters }}</td>
+          <td>{{ m.visitorCountYearMillion }}</td>
+          <td>{{ m.countryLocation }}</td>
+          <td>{{ m.constructionYear }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>vehicleType</th>
+          <th>maxSpeedKph</th>
+          <th>fuelCapacityLiters</th>
+          <th>wheelCount</th>
+          <th>manufacturerLocation</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of vehiclesModels; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.vehicleType }}</td>
+          <td>{{ m.maxSpeedKph }}</td>
+          <td>{{ m.fuelCapacityLiters }}</td>
+          <td>{{ m.wheelCount }}</td>
+          <td>{{ m.manufacturerLocation }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>professionName</th>
+          <th>avgSalaryUSD</th>
+          <th>yearsOfStudy</th>
+          <th>riskLevel</th>
+          <th>workEnvironment</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of professions; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.professionName }}</td>
+          <td>{{ m.avgSalaryUSD }}</td>
+          <td>{{ m.yearsOfStudy }}</td>
+          <td>{{ m.riskLevel }}</td>
+          <td>{{ m.workEnvironment }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>beverageTitle</th>
+          <th>caffeineMg</th>
+          <th>servingSizeMl</th>
+          <th>servedHot</th>
+          <th>sugarContentG</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of beveragesMenu; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.beverageTitle }}</td>
+          <td>{{ m.caffeineMg }}</td>
+          <td>{{ m.servingSizeMl }}</td>
+          <td>{{ m.servedHot }}</td>
+          <td>{{ m.sugarContentG }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>flowerName</th>
+          <th>petalCount</th>
+          <th>fragranceLevel</th>
+          <th>bloomingSeason</th>
+          <th>stemLengthCm</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of flowers; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.flowerName }}</td>
+          <td>{{ m.petalCount }}</td>
+          <td>{{ m.fragranceLevel }}</td>
+          <td>{{ m.bloomingSeason }}</td>
+          <td>{{ m.stemLengthCm }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>hotelLabel</th>
+          <th>stars</th>
+          <th>totalRooms</th>
+          <th>poolAvailable</th>
+          <th>cityLoc</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of hotels; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.hotelLabel }}</td>
+          <td>{{ m.stars }}</td>
+          <td>{{ m.totalRooms }}</td>
+          <td>{{ m.poolAvailable }}</td>
+          <td>{{ m.cityLoc }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>islandLabel</th>
+          <th>areaSqKm</th>
+          <th>countryAdmin</th>
+          <th>inhabited</th>
+          <th>climateType</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of islands; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.islandLabel }}</td>
+          <td>{{ m.areaSqKm }}</td>
+          <td>{{ m.countryAdmin }}</td>
+          <td>{{ m.inhabited }}</td>
+          <td>{{ m.climateType }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>insectName</th>
+          <th>wingspanCm</th>
+          <th>legsCount</th>
+          <th>lifespanDays</th>
+          <th>canFly</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of insects; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.insectName }}</td>
+          <td>{{ m.wingspanCm }}</td>
+          <td>{{ m.legsCount }}</td>
+          <td>{{ m.lifespanDays }}</td>
+          <td>{{ m.canFly }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>festivalName</th>
+          <th>monthObserved</th>
+          <th>durationDays</th>
+          <th>originCountry</th>
+          <th>outdoorEvent</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of festivals; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.festivalName }}</td>
+          <td>{{ m.monthObserved }}</td>
+          <td>{{ m.durationDays }}</td>
+          <td>{{ m.originCountry }}</td>
+          <td>{{ m.outdoorEvent }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>riverLabel</th>
+          <th>lengthKm</th>
+          <th>flowsThroughCountries</th>
+          <th>avgDepthM</th>
+          <th>deltaExists</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of rivers; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.riverLabel }}</td>
+          <td>{{ m.lengthKm }}</td>
+          <td>{{ m.flowsThroughCountries }}</td>
+          <td>{{ m.avgDepthM }}</td>
+          <td>{{ m.deltaExists }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>spiceName</th>
+          <th>colorHue</th>
+          <th>originRegion</th>
+          <th>pungencyLevel</th>
+          <th>isPowdered</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of spices; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.spiceName }}</td>
+          <td>{{ m.colorHue }}</td>
+          <td>{{ m.originRegion }}</td>
+          <td>{{ m.pungencyLevel }}</td>
+          <td>{{ m.isPowdered }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>toolName</th>
+          <th>weightKg</th>
+          <th>handleMaterial</th>
+          <th>manualTool</th>
+          <th>usageCategory</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of tools; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.toolName }}</td>
+          <td>{{ m.weightKg }}</td>
+          <td>{{ m.handleMaterial }}</td>
+          <td>{{ m.manualTool }}</td>
+          <td>{{ m.usageCategory }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>mineralLabel</th>
+          <th>hardnessMoh</th>
+          <th>crystalSystem</th>
+          <th>isMetallic</th>
+          <th>marketPriceUSDkg</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of minerals; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.mineralLabel }}</td>
+          <td>{{ m.hardnessMoh }}</td>
+          <td>{{ m.crystalSystem }}</td>
+          <td>{{ m.isMetallic }}</td>
+          <td>{{ m.marketPriceUSDkg }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>moonLabel</th>
+          <th>orbitingPlanet</th>
+          <th>diameterKm</th>
+          <th>discoveredYear</th>
+          <th>surfaceMaterial</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of planetsMoons; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.moonLabel }}</td>
+          <td>{{ m.orbitingPlanet }}</td>
+          <td>{{ m.diameterKm }}</td>
+          <td>{{ m.discoveredYear }}</td>
+          <td>{{ m.surfaceMaterial }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>bandLabel</th>
+          <th>originCity</th>
+          <th>formedYear</th>
+          <th>genreStyle</th>
+          <th>albumsCount</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of musicalBands; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.bandLabel }}</td>
+          <td>{{ m.originCity }}</td>
+          <td>{{ m.formedYear }}</td>
+          <td>{{ m.genreStyle }}</td>
+          <td>{{ m.albumsCount }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>metroLabel</th>
+          <th>trackLengthKm</th>
+          <th>dailyRidershipMillion</th>
+          <th>operatingSince</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of citiesMetro; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.metroLabel }}</td>
+          <td>{{ m.trackLengthKm }}</td>
+          <td>{{ m.dailyRidershipMillion }}</td>
+          <td>{{ m.operatingSince }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>discoveryLabel</th>
+          <th>discoveredBy</th>
+          <th>yearMade</th>
+          <th>fieldArea</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of sciDiscoveries; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.discoveryLabel }}</td>
+          <td>{{ m.discoveredBy }}</td>
+          <td>{{ m.yearMade }}</td>
+          <td>{{ m.fieldArea }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>parkLabel</th>
+          <th>countryLocated</th>
+          <th>establishedYear</th>
+          <th>areaSqKm</th>
+          <th>annualVisitorsMillion</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of nationalParks; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.parkLabel }}</td>
+          <td>{{ m.countryLocated }}</td>
+          <td>{{ m.establishedYear }}</td>
+          <td>{{ m.areaSqKm }}</td>
+          <td>{{ m.annualVisitorsMillion }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>paintingTitle</th>
+          <th>artistName</th>
+          <th>yearCreated</th>
+          <th>styleType</th>
+          <th>currentLocation</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of artPaintings; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.paintingTitle }}</td>
+          <td>{{ m.artistName }}</td>
+          <td>{{ m.yearCreated }}</td>
+          <td>{{ m.styleType }}</td>
+          <td>{{ m.currentLocation }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>battleName</th>
+          <th>battleYear</th>
+          <th>mainCombatants</th>
+          <th>outcome</th>
+          <th>casualtiesApprox</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of historicalBattles; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.battleName }}</td>
+          <td>{{ m.battleYear }}</td>
+          <td>{{ m.mainCombatants }}</td>
+          <td>{{ m.outcome }}</td>
+          <td>{{ m.casualtiesApprox }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>awardTitle</th>
+          <th>categoryGiven</th>
+          <th>established</th>
+          <th>awardCountry</th>
+          <th>frequencyYears</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of awards; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.awardTitle }}</td>
+          <td>{{ m.categoryGiven }}</td>
+          <td>{{ m.established }}</td>
+          <td>{{ m.awardCountry }}</td>
+          <td>{{ m.frequencyYears }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>bridgeLabel</th>
+          <th>lengthMeters</th>
+          <th>countryLocated</th>
+          <th>builtYear</th>
+          <th>materialMain</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of bridges; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.bridgeLabel }}</td>
+          <td>{{ m.lengthMeters }}</td>
+          <td>{{ m.countryLocated }}</td>
+          <td>{{ m.builtYear }}</td>
+          <td>{{ m.materialMain }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>telescopeName</th>
+          <th>launchYear</th>
+          <th>primaryMirrorM</th>
+          <th>operatorAgency</th>
+          <th>missionStatus</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of spaceTelescopes; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.telescopeName }}</td>
+          <td>{{ m.launchYear }}</td>
+          <td>{{ m.primaryMirrorM }}</td>
+          <td>{{ m.operatorAgency }}</td>
+          <td>{{ m.missionStatus }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>brandLabel</th>
+          <th>foundedYear</th>
+          <th>originCountry</th>
+          <th>productType</th>
+          <th>annualRevenueBillionUSD</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of fashionBrands; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.brandLabel }}</td>
+          <td>{{ m.foundedYear }}</td>
+          <td>{{ m.originCountry }}</td>
+          <td>{{ m.productType }}</td>
+          <td>{{ m.annualRevenueBillionUSD }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>instrumentName</th>
+          <th>categoryFamily</th>
+          <th>rangeOctaves</th>
+          <th>madeOf</th>
+          <th>originCentury</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of musicalInstrumentsPro; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.instrumentName }}</td>
+          <td>{{ m.categoryFamily }}</td>
+          <td>{{ m.rangeOctaves }}</td>
+          <td>{{ m.madeOf }}</td>
+          <td>{{ m.originCentury }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>browserName</th>
+          <th>developerOrg</th>
+          <th>firstReleaseYear</th>
+          <th>engineUsed</th>
+          <th>platformSupport</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of webBrowsers; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.browserName }}</td>
+          <td>{{ m.developerOrg }}</td>
+          <td>{{ m.firstReleaseYear }}</td>
+          <td>{{ m.engineUsed }}</td>
+          <td>{{ m.platformSupport }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>airlineName</th>
+          <th>foundedYear</th>
+          <th>hubAirport</th>
+          <th>fleetSize</th>
+          <th>allianceMember</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of airlines; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.airlineName }}</td>
+          <td>{{ m.foundedYear }}</td>
+          <td>{{ m.hubAirport }}</td>
+          <td>{{ m.fleetSize }}</td>
+          <td>{{ m.allianceMember }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>SR No</th>
+          <th>volcanoLabel</th>
+          <th>heightMeters</th>
+          <th>lastEruptionYear</th>
+          <th>locationIsland</th>
+          <th>volcanoType</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of volcanoes; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ m.volcanoLabel }}</td>
+          <td>{{ m.heightMeters }}</td>
+          <td>{{ m.lastEruptionYear }}</td>
+          <td>{{ m.locationIsland }}</td>
+          <td>{{ m.volcanoType }}</td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="primary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm" mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
