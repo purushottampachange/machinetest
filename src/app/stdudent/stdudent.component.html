@@ -1,0 +1,120 @@
+<div class="row mt-3">
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-body">
+        <form #stdForm="ngForm" (ngSubmit)="onStdAdd()">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input
+              required
+              name="fname"
+              ngModel
+              type="text"
+              class="form-control"
+              id="fname"
+              #fname
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input
+              required
+              name="lname"
+              ngModel
+              type="text"
+              class="form-control"
+              id="lname"
+              #lname
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              required
+              name="email"
+              ngModel
+              type="text"
+              class="form-control"
+              id="email"
+              #email
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input
+              required
+              name="contact"
+              ngModel
+              type="text"
+              class="form-control"
+              id="contact"
+              #contact
+            />
+          </div>
+
+          <button
+            *ngIf="!isEditmode"
+            class="btn btn-block"
+            mat-raised-button
+            color="primary"
+          >
+            Add Student
+          </button>
+          <button
+          (click) ="onStdUpdate()"
+            type="button"
+            *ngIf="isEditmode"
+            class="btn btn-block"
+            mat-raised-button
+            color="primary"
+          >
+            Update Student
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="card">
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>SR No</th>
+              <th>FullName</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Edit</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let std of stdArr; let i = index; trackBy : trackById">
+              <td>{{ i + 1 }}</td>
+              <td>{{ std.fname }} {{ std.lname }}</td>
+              <td>{{ std.email }}</td>
+              <td>{{ std.contact }}</td>
+              <td>
+                <button 
+                (click)="onStdEdit(std)"
+                mat-mini-fab color="primary">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </td>
+              <td>
+                <button 
+                (click)="onstdRemove(std.id)"
+                mat-mini-fab color="warn">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

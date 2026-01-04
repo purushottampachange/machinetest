@@ -1,0 +1,47 @@
+<div class="row mt-4">
+    <div class="col-md-6">
+       <div class="card">
+        <div class="card-body">
+            <form #tudoForm = "ngForm" (ngSubmit)="OntudoAdd()" >
+                <div class="form-group">
+                    <label for="tudo">Enter Tudo</label>
+                    <input 
+                    required
+                    ngModel
+                    name="tudoItem"
+                    type="text" class="form-control" id="tudo">
+                </div>
+                <button 
+                *ngIf="!IsEdiMode"
+                class="btn btn-block" mat-raised-button color="primary">Add Tudo</button>
+                <button 
+                type="button"
+                (click) ="onTudoUpdate()"
+                *ngIf="IsEdiMode"
+                class="btn btn-block" mat-raised-button color="primary">Update Tudo</button>
+            </form>
+        </div>
+       </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-group">
+                    <li 
+                    *ngFor="let t of tudoArr ; trackBy : trackById"
+                    class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>{{t.tudoItem}}</strong>
+                        <div>
+                            <button 
+                            (click)="onTudoEdit(t)"
+                            mat-mini-fab class="mr-2" color="primary"><mat-icon>edit</mat-icon></button>
+                            <button 
+                            (click)="onTudoRemove(t.tudoId)"
+                            mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

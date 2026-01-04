@@ -10,6 +10,12 @@ import { ProductsComponent } from './products/products.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { StdudentComponent } from './stdudent/stdudent.component';
+import { TudoComponent } from './tudo/tudo.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { GetConfirmComponent } from './get-confirm/get-confirm.component';
+import{FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -18,6 +24,10 @@ import { MatCardModule } from '@angular/material/card';
     TablesComponent,
     PostsComponent,
     ProductsComponent,
+    StdudentComponent,
+    TudoComponent,
+    GetConfirmComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -25,6 +35,9 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    MatSnackBarModule,
+    MatDialogModule,
+     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
