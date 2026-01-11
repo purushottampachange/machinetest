@@ -1,0 +1,348 @@
+<div class="row mt-4">
+  <div class="col-md-6 offset-md-3">
+    <div class="card">
+      <div class="card-body">
+        <form #signUpForm="ngForm" (ngSubmit)="onSignUP()">
+          <div class="form-group">
+            <label for="userName">UserName <sup>*</sup></label>
+            <input
+              required
+              minlength="6"
+              maxlength="12"
+              [pattern]="pattrens.onlyText"
+              ngModel
+              name="userName"
+              #userName="ngModel"
+              type="text"
+              class="form-control"
+              id="userName"
+            />
+
+            <small
+              *ngIf="userName.touched && userName.hasError('required')"
+              class="text-danger text-uppercase"
+            >
+              userName is Required field
+            </small>
+
+            <small
+              *ngIf="userName.dirty && userName.hasError('minlength')"
+              class="text-danger text-uppercase"
+            >
+              minlength of username should be
+              {{userName.errors?.["minlength"].requiredLength}} actualLength of
+              userName is {{userName.errors?.["minlength"].actualLength}}
+            </small>
+
+            <small
+              *ngIf="userName.value?.length == 12"
+              class="text-primary text-uppercase"
+            >
+              maxlength of username should be 12
+            </small>
+
+            <small
+              *ngIf="userName.dirty && userName.hasError('pattern')"
+              class="text-danger text-uppercase"
+            >
+              special characters and numbers are not allowed
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <sup>*</sup></label>
+            <input
+              required
+              [pattern]="pattrens.email"
+              ngModel
+              name="email"
+              #email="ngModel"
+              type="text"
+              class="form-control"
+              id="email"
+            />
+
+            <small
+              *ngIf="email.touched && email.hasError('required')"
+              class="text-danger text-uppercase"
+            >
+              Email is Required field
+            </small>
+
+            <small
+              *ngIf="email.dirty && email.hasError('pattern')"
+              class="text-danger text-uppercase"
+            >
+              invalid email id
+              <span class="text-lowercase"> jhon@gamil.com </span>
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="secQuestion">secQuestion <sup>*</sup></label>
+            <select
+              ngModel
+              required
+              #secQuestion="ngModel"
+              name="secQuestion"
+              id="secQuestion"
+              class="form-control"
+            >
+              <option value="fevSport">Favourite Sports</option>
+              <option value="fevDest">Favourite Destination</option>
+            </select>
+
+            <small
+              *ngIf="secQuestion.touched && secQuestion.hasError('required')"
+              class="text-danger text-uppercase"
+            >
+              secQuestion id required Field
+            </small>
+          </div>
+
+          <div *ngIf="secQuestion.valid" class="form-group">
+            <label for="answer">Answer <sup>*</sup></label>
+            <input
+              required
+              ngModel
+              name="answer"
+              #answer="ngModel"
+              [pattern]="pattrens.onlyText"
+              type="text"
+              class="form-control"
+              id="answer"
+            />
+
+            <small
+              *ngIf="answer.touched && answer.hasError('required')"
+              class="text-danger text-uppercase"
+            >
+              answer is required field
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="subscribe"
+              >Subscribe for daily Mails
+              <input ngModel name="subscribe" type="checkbox" />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="modeOfContact">Mode Of Contact <sup>*</sup></label>
+            <br />
+            <label for="mocPhone" class="mr-3">
+              <input
+                type="radio"
+                value="Phone"
+                ngModel
+                required
+                name="moc"
+                #moc="ngModel"
+                id="mocPhone"
+              />
+              Phone
+            </label>
+            <label for="mocEmail">
+              <input
+                type="radio"
+                value="email"
+                ngModel
+                required
+                name="moc"
+                id="mocEmail"
+              />
+              Email
+            </label>
+            <br />
+            <small
+              *ngIf="moc.touched && moc.hasError('required')"
+              class="text-danger"
+            >
+              Mode Of Contact id required field
+            </small>
+          </div>
+
+          <button class="btn btn-block" mat-raised-button color="primary">
+            SignUP
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row mt-4">
+  <div class="col-md-6 offset-md-3">
+    <div class="card">
+      <div class="card-body">
+        <form #signUpForm="ngForm" (ngSubmit)="onSignUp()">
+          <div class="form-group">
+            <label for="userName">UserName <sup>*</sup></label>
+            <input
+              ngModel
+              name="userName"
+              required
+              minlength="6"
+              maxlength="12"
+              #userName="ngModel"
+              [pattern]="patterns.onlyText"
+              type="text"
+              class="form-control"
+              id="userName"
+            />
+
+            <small
+              *ngIf="userName.touched && userName.hasError('required')"
+              class="text-danger"
+            >
+              userName is required field
+            </small>
+            <small
+              *ngIf="userName.dirty && userName.hasError('minlength')"
+              class="text-danger"
+            >
+              minimum length of username should be
+              {{userName.errors?.['minlength'].requiredLength}} actual length of
+              username is {{userName.errors?.['minlength'].actualLength}}
+            </small>
+
+            <small *ngIf="userName.value?.length == 12" class="text-primary">
+              maximum length should be 12
+            </small>
+
+            <small
+              *ngIf="userName.dirty && userName.hasError('pattern')"
+              class="text-danger text-uppercase"
+            >
+              special characters and numbers are not allowed
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <sup>*</sup></label>
+            <input
+              ngModel
+              name="email"
+              required
+              [pattern]="patterns.email"
+              #email="ngModel"
+              type="text"
+              class="form-control"
+              id="email"
+            />
+
+            <small
+              *ngIf="email.touched && email.hasError('required')"
+              class="text-danger text-uppercase"
+            >
+              email is required field
+            </small>
+
+            <small
+              *ngIf="email.dirty && email.hasError('pattern')"
+              class="text-danger text-uppercase"
+            >
+              invalid email pattern
+              <span class="text-lowercase">abcd@gmail.com</span>
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="question">Secuirity Question <sup>*</sup></label>
+            <select
+              name="secQuestion"
+              ngModel
+              required
+              #secQuestion="ngModel"
+              id="question"
+              class="form-control"
+            >
+              <option value="fevSport">Favourite Sport</option>
+              <option value="fevDest">Favourite Destinaton</option>
+            </select>
+
+            <small
+              *ngIf="secQuestion.touched && secQuestion.hasError('required')"
+              class="text-danger text-uppercase"
+            >
+              Secuirity Question is required Field
+            </small>
+          </div>
+
+          <div *ngIf="secQuestion.valid" class="form-group">
+            <label for="answer">Answer <sup>*</sup></label>
+            <input
+              required
+              ngModel
+              name="answer"
+              #answer="ngModel"
+              type="text"
+              class="form-control"
+              id="answer"
+            />
+
+            <small
+              *ngIf="answer.touched && answer.hasError('required')"
+              class="text-danger"
+            >
+              answer filed is required
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="subscribe"
+              >Subscribe for daily Mails
+              <input ngModel name="subscribe" type="checkbox" />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="modeOfContact">Mode Of Contact <sup>*</sup></label>
+            <br />
+            <label for="mocPhone" class="mr-3">
+              <input
+                type="radio"
+                value="Phone"
+                ngModel
+                required
+                name="moc"
+                #moc="ngModel"
+                id="mocPhone"
+              />
+              Phone
+            </label>
+            <label for="mocEmail">
+              <input
+                type="radio"
+                value="email"
+                ngModel
+                required
+                name="moc"
+                id="mocEmail"
+              />
+              Email
+            </label>
+            <br />
+            <small
+              *ngIf="moc.touched && moc.hasError('required')"
+              class="text-danger"
+            >
+              Mode Of Contact id required field
+            </small>
+          </div>
+
+          <button
+            [disabled]="signUpForm.invalid"
+            class="btn btn-block"
+            mat-raised-button
+            color="primary"
+          >
+            SignUp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ -->

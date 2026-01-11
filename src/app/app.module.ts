@@ -15,7 +15,8 @@ import { TudoComponent } from './tudo/tudo.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { GetConfirmComponent } from './get-confirm/get-confirm.component';
-import{FormsModule} from '@angular/forms'
+import{FormsModule} from '@angular/forms';
+import { TDFormComponent } from './tdform/tdform.component'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import{FormsModule} from '@angular/forms'
     StdudentComponent,
     TudoComponent,
     GetConfirmComponent,
+    TDFormComponent,
    
   ],
   imports: [
